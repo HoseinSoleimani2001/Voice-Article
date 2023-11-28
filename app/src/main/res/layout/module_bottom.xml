@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearBottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_info"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:padding="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/bt_volume"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="6dp"
+        android:padding="20dp"
+        android:src="@drawable/ic_volume_on"
+        app:tint="?attr/colorOnPrimary" />
+
+    <ImageView
+        android:id="@+id/bt_go_before"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_before"
+        app:tint="?attr/colorOnPrimary" />
+
+    <ImageView
+        android:id="@+id/bt_play_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/shape_play"
+        android:padding="16dp"
+        android:src="@drawable/ic_play"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/bt_go_after"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:padding="16dp"
+        android:src="@drawable/ic_next"
+        app:tint="?attr/colorOnPrimary" />
+
+    <com.varunest.sparkbutton.SparkButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:sparkbutton_activeImage="@drawable/ic_heart_selected"
+        app:sparkbutton_iconSize="20dp"
+        app:sparkbutton_inActiveImage="@drawable/ic_heart_not_selected"
+        app:sparkbutton_primaryColor="@color/color_red"
+        app:sparkbutton_secondaryColor="@color/color_red"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</LinearLayout>

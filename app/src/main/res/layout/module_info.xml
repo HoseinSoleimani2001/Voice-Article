@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape_info"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/img_main"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/plant" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/txt_name_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="DNA analysis of plants"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/txt_date_article"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="03 August 2023" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/txt_auther_name"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Christian Jung" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/txt_number_article"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Article number: 12602" />
+
+</LinearLayout>

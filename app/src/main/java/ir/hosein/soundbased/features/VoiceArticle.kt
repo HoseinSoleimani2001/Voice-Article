@@ -5,7 +5,6 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.annotation.RequiresApi
@@ -14,12 +13,13 @@ import com.google.android.material.slider.Slider
 import ir.hosein.soundbased.ApiManager.model.ArticleData
 import ir.hosein.soundbased.R
 import ir.hosein.soundbased.databinding.ActivityVoiceArticleBinding
+import ir.hosein.soundbased.ext.BaseActivity
 import java.util.Locale
 import java.util.Timer
 import java.util.TimerTask
 
 @Suppress("DEPRECATION")
-class VoiceArticle : AppCompatActivity() {
+class VoiceArticle : BaseActivity() {
     lateinit var binding: ActivityVoiceArticleBinding
     lateinit var dataThisArticle: ArticleData.ArticleDataItem
     lateinit var mediaPlayer: MediaPlayer
@@ -131,11 +131,13 @@ class VoiceArticle : AppCompatActivity() {
         if (isPlaying) {
             mediaPlayer.pause()
             binding.layoutBottom.btPlayPause.setImageResource(R.drawable.ic_play)
+            binding.layoutInfo.lottieMusic.pauseAnimation()
             isPlaying = false
         } else {
 
             mediaPlayer.start()
             binding.layoutBottom.btPlayPause.setImageResource(R.drawable.ic_pause)
+            binding.layoutInfo.lottieMusic.playAnimation()
             isPlaying = true
         }
     }
@@ -179,6 +181,7 @@ class VoiceArticle : AppCompatActivity() {
 
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         super.onBackPressed()
         mediaPlayer.pause()

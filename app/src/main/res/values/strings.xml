@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">VoiceArticle</string>
+    <string name="dna_analysis_of_plants">DNA analysis of plants</string>
+    <string name="date">03 August 2023</string>
+    <string name="author_name">Christian Jung</string>
+    <string name="article_number">Article number: 12602</string>
 </resources>

@@ -1,17 +1,16 @@
 package ir.hosein.soundbased.features
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import ir.hosein.soundbased.ApiManager.ApiManager
 import ir.hosein.soundbased.ApiManager.model.ArticleData
 import ir.hosein.soundbased.ArticleAdapter
 import ir.hosein.soundbased.databinding.ActivityMainBinding
+import ir.hosein.soundbased.ext.BaseActivity
 
-class MainActivity : AppCompatActivity(), ArticleAdapter.RecyclerCallback {
+class MainActivity : BaseActivity(), ArticleAdapter.RecyclerCallback {
     lateinit var binding: ActivityMainBinding
     private lateinit var articleAdapter: ArticleAdapter
     val apiManager = ApiManager()
